@@ -1,0 +1,52 @@
+/* === CUSTOMER SAY CAROUSEL === */
+#carouselExampleDark {
+  max-width: 800px;      /* Giới hạn khung carousel */
+  margin: 50px auto;     /* Căn giữa toàn bộ carousel */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#carouselExampleDark .carousel-inner {
+  background: #f8f9fa;   /* Nền sáng nhẹ để ảnh nổi bật */
+  display: flex;
+  align-items: center;   /* Căn giữa dọc ảnh */
+  justify-content: center; /* Căn giữa ngang ảnh */
+  min-height: 350px;
+}
+
+#carouselExampleDark .carousel-item img {
+  max-height: 320px;     /* Giới hạn chiều cao ảnh */
+  width: auto;           /* Không ép giãn ngang */
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;   /* Giữ đúng tỉ lệ ảnh */
+}
+
+#carouselExampleDark .carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #fff;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+#carouselExampleDark h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+#carouselExampleDark p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Nút mũi tên */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* đổi thành màu đen trên nền sáng */
+}
